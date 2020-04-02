@@ -1,0 +1,121 @@
+--Comentários em java script:
+// comentário de uma linha
+
+/*
+comentário
+de 
+bloco
+*/
+
+--Converter string para numero
+Number.parseInt()
+Number.parseFloat()
+Numer()
+
+--Converter numero para string
+String(numero)
+numero.toString()
+
+--Template String - placeholder ${}
+var s = 'JavaScript'
+`Eu estou aprendendo ${s}`
+
+--Quantidade de caracteres de uma String
+var s = 'JavaScript'
+s.length
+
+--Caracteres em maíusculo
+s.toUpperCase()
+
+--Caracteres em mínusculo
+s.toLowerCase()
+
+--Casas decimais
+var n1 = 1545.5
+n1.toFixed(2)
+'1545.50'
+
+--Troca o ponto decimal para virgula
+var n1 = 1545.5
+n1.toFixed(2).replace('.',',')
+'1545,50'
+
+- Exibir valor em moeda local
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+
+--Operadores
+Aritiméticos
++ => soma
+- => subtração
+* => multiplicação
+/ => divisão
+% => resto da divisão inteira
+** => potência
+
+--Ordem de precedência
+()
+**
+* / %
++ -
+
+--Operador de atriuição
+=
+exemlo: var a = 5 + 3
+        var b = a % 5
+        var c = 5 * b ** 2
+        var d = 10 - a / 2
+        var e = 6 * 2 / d
+        var f = b % e + 4 / e
+
+--Operadores relacionais
+>  -> maior
+<  -> menor
+>= -> maior ou igual
+<= -> menor ou igual
+== -> igual
+!= -> diferente
+
+--Operador de identidade
+===
+!==
+exemlo: 5 === '5'  false
+        5 !== '5'  true
+
+--Operadores lógicos (precedência na ordem abaixo)
+!   -> negação
+&&  -> conjunção
+||  -> disjunção
+
+1.Aritiméticos
+2.Relacionais
+3.Lógicos
+
+--Operador ternário
+?:
+teste?true:false
+media >= 7.0 ? 'aprovado' : 'reprovado'
+
+-- DOM
+Document Object Model
+
+-- Tecnicas para acessar elementos dentro do JavaScript usando o DOM
+TagName
+ID 
+Name 
+ClassName
+querySelector
+
+-- Estudar --
+Arrow Function
+Funções anonimas
+Call Back
+IIFE
+
+javascript funcional
+objetos
+
+RegEx (expressões regulares)
+JSON
+AJAX
+
+NodeJS

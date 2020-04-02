@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(187, 187, 226);
+            font: normal 18pt Arial;
+        }
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+        div#res {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    Em que pais você vive <input type="text" name="txt1" id="txt1"> ?
+    <input type="button" value="Verificar" onclick="valida()">
+    <div id='res'></div>
+    <script>
+        function valida() {
+            var pais = window.document.querySelector('input#txt1')
+            var res  = window.document.querySelector('div#res')
+            
+            if(pais.value.toLowerCase() == "brasil") {
+                res.innerHTML = `<p>Você é Brasileiro</p>`
+            } else {
+                res.innerHTML = `<p>Você é estrangeiro - <strong>${pais.value}</strong></p>`
+            }  
+        }
+    </script>
+</body>
+</html>
